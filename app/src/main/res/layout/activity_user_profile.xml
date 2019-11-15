@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myProfilePicture"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:layout_below="@id/myProfilePicture"
+        android:id="@+id/myUserNameTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/myUserNameTxt"
+        android:id="@+id/myPhoneTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:layout_marginTop="150dp"
+        android:checked="false"
+        android:layout_below="@id/myPhoneTxt"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/myPrivacyStatusSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share My location " />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/deleteAccBtn"
+        android:background="#FF4086"
+        android:layout_marginBottom="90dp"
+        android:layout_centerHorizontal="true"
+        android:text="delete this account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
